@@ -81,3 +81,23 @@ img{
 .centrar-texto{
     text-align: center;
 }
+
+/* Header */
+
+.header{
+
+    background-image: url(/img/banner.jpg);
+    height: 62rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* este codigo hace quw la imagen fluya al reducir su tamanio */
+    background-position: center center;
+
+}
+
+.header__texto{
+
+    text-align: center;
+    color: var(--blanco);
+    margin-top:5rem ;
+}
