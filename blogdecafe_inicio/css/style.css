@@ -4,6 +4,7 @@
     --fuenteParrafos: 'Open Sans', sans-serif;
 
     --primario: #784D3C;
+    --gris:#e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
 
@@ -151,4 +152,37 @@ img{
        grid-template-columns: 2fr 1fr ; 
        column-gap: 4rem;
     }
+}
+/* este codigo pone un borde inferior para mas estilo */
+.entrada{
+   
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+/* este codigo quita lo que se hizo en lo anterior al ultimo article */
+.entrada:last-of-type{
+   
+    border:none;
+    margin-bottom: 0;
+}
+.boton{
+display: block;
+font-family: var(--fuenteHeading);
+color: var(--blanco);
+text-align: center;
+padding: 1rem 3rem;
+font-size: 1.8rem;
+text-transform: uppercase;
+font-weight: 700;
+margin-bottom: 2rem;
+
+}
+@media (min-width:768px){
+    /* toma el espacio requerido pero respera los margin */
+    .boton{
+        display: inline-block;
+    }
+}
+.boton--primario{
+    background-color: var(--negro);
 }
